@@ -1,0 +1,8 @@
+var var1
+// var1=10??20
+// var1=null??20
+// var1=undefined??20??10
+var1=10??20
+
+
+console.log(var1);
