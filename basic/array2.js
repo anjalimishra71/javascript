@@ -1,6 +1,7 @@
 let herosName=["virat","rohit","surya"]
 let herosName2=["sachin","kapil dev"]
 // herosName.push(herosName2)
+
 // const new_listOfHeros=herosName.concat(herosName2)
 
 // console.log(new_listOfHeros);

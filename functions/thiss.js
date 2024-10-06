@@ -1,8 +1,8 @@
 const user={
      username:"anjalimishra",
      welcome: function(){
-        // console.log(`welcome, ${this.username}`);
-        // console.log(this)
+        console.log(`welcome, ${this.username}`);
+        console.log(this)
 
     },
 }
@@ -14,19 +14,11 @@ const user={
 function chai(){
     const chaiid=1
     // console.log(this.chaiid);
-    console.log(this);
-}
-// chai()
-
-const car2=function(){
-    const chaiid=1
-    console.log(this.chaiid);
-
     // console.log(this);
 }
-// car2()
+chai()
 
-// const car2=()=>{
+// const car2=function(){
 //     const chaiid=1
 //     // console.log(this.chaiid);
 
@@ -34,10 +26,18 @@ const car2=function(){
 // }
 // car2()
 
+const car2=()=>{
+    const chaiid=1
+    // console.log(this.chaiid);
 
-// const add=(num1,num2)=>{
-//     return num1+num2//explicit return
-// }
+    console.log(this);
+}
+// car2()
+
+
+const add=(num1,num2)=>{
+    return num1+num2//explicit return
+}
 
 // console.log(add(1,2))
 

@@ -10,7 +10,7 @@ for(let i of map){
 }
 
 for(let [key,value] of map){
-   // console.log(key +':-'+value);
+//    console.log(key +':-'+value);
 }
 
 const myObject={
@@ -19,7 +19,7 @@ const myObject={
     swift:"swift for apple"
 }
 for(let key in myObject){
-  //  console.log(`${key} shortcut is ${myObject[key]}`);
+//    console.log(`${key} shortcut is ${myObject[key]}`);
 }
 
 let programming=["js","cpp","c","java","python"]

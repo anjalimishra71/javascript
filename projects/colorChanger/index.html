@@ -6,20 +6,42 @@
     <title>color Changer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onLoad="show_data()" >
     <div class="canvas">
-        <h1>Color scheme Switcher</h1>
+        <!-- <h1>Color scheme Switcher</h1> -->
+     <h2>Choose background color</h2>
         <span class="button" id="gray"></span>
         <span class="button" id="white"></span>
         <span class="button" id="blue"></span>
         <span class="button" id="yellow"></span>
+        <span class="button" id="red"></span>
+        <span class="button" id="aqua"></span>
+        <span class="button" id="black"></span>
+        <span class="button" id="orange"></span>
+        <span class="button" id="lime"></span>
+        <span class="button" id="pink"></span>
+        <span class="button" id="green"></span>
+
    <!-- <h2>Try clicking on one of the colors above <span>to change the background color of the page</span></h2> -->
+   <div>
+   Enter Name:<input type="text" name="text" id="text" required><br>
+ Choose Size:<input type="range" value="0" id="textSizeRange" min="15" max="50" step="1" onchange="changefonts()"><br/>
+   Choose color:<input type="color" value="black" id="color" onchange="changefonts()"><br/>
+   Choose Fontsize<select name="fontfamily" id="fontfamily" onchange="changefonts()">
+       <option value="Arial">Arial</option>
+       <option value="jokerman">jokerman</option>
+       <option value="algerian">algerian</option>
+       <option value="Georgla">Georgla</option>
+       <option value="Courier New">Courier New</option>
+
+  
+  
+    </select><br/>
+        <footer>
+    <input type="button" value="save" id="b" onClick="save_data()">
+    <input type="button" value="remove" id="b" onClick="remove_data()">
+</footer>
 </div>
-
-  Enter Name:<input type="text" name="t1" id="t1" onClick="changes()" required><br>
-    <input type="button" value="save" id="t2" onClick="save_data()">
-    <input type="button" value="remove" id="t2" onClick="remove_data()">
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

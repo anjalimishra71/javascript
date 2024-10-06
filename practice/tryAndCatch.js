@@ -1,8 +1,9 @@
-console.log("hello");
 try{
-    console.log(webDevelopment);
+    console.log("hello everyone"+a);
 }
-catch(error){
-    console.log(error.message);
-
+catch{
+    console.log("i am catch");
+}
+finally{
+    console.log("hii i am finally")
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       let number = 123;
+let num;
+for (let i = 10; i <= number; i++) {
+    let sum = 0, mul = 1, c = 10;
+    num = i;
+    while (c >=10) {
+        num = parseInt(c % 10)
+        sum += num;
+        mul *= num;
+        c = parseInt(num / 10);
+
+    }
+    sum+=num;
+    mul*=num;
+    if (sum == mul) {
+        console.log(`number is spy number  ${i}\n`);
+    }
+}
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

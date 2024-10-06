@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const person = {
+    name: "anjali",
+    list: [1, 2, 3, 4, 5],
+    friends: ["shipali", "ekta"],
+orderPsta: function (ing, ing2, ing3) {
+ console.log(`yeh this is my ings ${ing} ${ing2} ${ing3}`)
+    }
+}
+console.log(person)
+const arr = [1, 2, 3, 4, 5]
+console.log(...person.friends, ...arr)
+
+const ingredients = [
+  //  "a", "b", "c"
+
+// prompt("first ings"),
+// prompt("second ings"),
+// prompt("third ings")
+]
+person.orderPsta(...ingredients);
+const newPerson={subject:"programming",...person,rollNo:1}
+console.log(newPerson)
+console.log(person)
+
+const perName={...person}
+perName.name="kaju"
+console.log(perName.name)
+console.log(person.name)
+
+  </script>
+</body>
+</html>

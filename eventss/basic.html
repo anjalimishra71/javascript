@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue; height: 100vh;">
+    <h2>Amazing Images</h2>
+    <div>
+    <ul id="images">
+       <li><img src="https://images.pexels.com/photos/17443857/pexels-photo-17443857/free-photo-of-a-book-store-with-many-books-on-shelves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="200px" id="photoshop" alt="photoshop"></li>
+       <li><img src="https://images.pexels.com/photos/26976251/pexels-photo-26976251/free-photo-of-a-restaurant-with-flowers-in-front-of-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="200px" id="japan" alt="photoshop"></li>
+       <li><img src="https://images.pexels.com/photos/12222229/pexels-photo-12222229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="200px" id="river" alt="photoshop"></li>
+       <li><img src="https://images.pexels.com/photos/2683946/pexels-photo-2683946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="200px" id="owl" alt="photoshop"></li>
+       <li><img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="200px" id="prayer" alt="photoshop"></li>
+    <li ><a href="https://google.com" style="color: aliceblue;" id="google">Google</a></li>
+    </ul>
+</div>
+</body>
+<script>
+// document.getElementById('owl').onclick=function(){
+//     alert('owl clicked')
+// }
+
+
+//by Default false--->bubbling
+document.getElementById('images').addEventListener('click',function(e){
+    console.log("cliked inside the ul")
+},false)
+document.getElementById('owl').addEventListener('click',function(e){
+    console.log("cliked inside the owl")
+    // e.stopPropagation(); //use for stop bubbling
+},false)
+
+
+
+//capturing
+// document.getElementById('images').addEventListener('click',function(e){
+//     console.log("cliked inside the ul")
+// },true)
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log("cliked inside the owl")
+
+// },true)
+
+// document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log("clicked google")
+// })
+
+
+
+// document.getElementById('images').addEventListener('click',function(e){
+//     // console.log(e.target.parentNode);
+//     console.log(e.target.tagName);
+//     if(e.target.tagName==='IMG'){
+//         console.log(e.target.id);
+//         let removeIt=e.target.parentNode
+//     removeIt.remove();
+    
+//     }
+//       //    removeIt.parentNode.removeChild(removeIt)
+
+// })
+</script>
+</html>

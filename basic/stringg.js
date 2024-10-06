@@ -9,16 +9,16 @@
 // console.log(income.toPrecision(5));
 
 
-// const hundreds=100000
-// console.log(hundreds.toLocaleString());
-// console.log(hundreds.toLocaleString('en-IN'));
+// const num=1000000
+// console.log(num.toLocaleString());
+// console.log(num.toLocaleString('en-IN'));
 
 
 //+++++++++++++ math++++++++++++++++++++++++ 
 // console.log(Math)
 // console.log(Math.abs(-4))
 // console.log(Math.round(4.6))
-// console.log(Math.ceil(4.6))
+// console.log(Math.ceil(4.2))
 // console.log(Math.floor(4.1))
 
 // let mydate=new Date()

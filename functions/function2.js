@@ -9,7 +9,7 @@ let user={
 }
 
 function userDetails(user){
-   console.log(`hey everyone my name is ${user.name} and course is ${user.course}`)
+//    console.log(`hey everyone my name is ${user.name} and course is ${user.course}`)
 
 }
 
@@ -19,7 +19,7 @@ let studends=["anjali",1,2004]
 function aboutStudent(stu){
     // console.log(stu);
 // return studends
-return studends[1]
+return studends[0]
 }
-aboutStudent(studends)
+// aboutStudent(studends)
 console.log(aboutStudent(studends));

@@ -9,6 +9,7 @@ let student={
     name:"anjali",
     course:"js"
 }
+
 let stu2=student
 stu2.name="ekta"
 console.log(student)

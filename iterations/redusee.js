@@ -4,7 +4,7 @@ let num=[1,2,3]
 // },0)
 // console.log(myNum);
 
-// let myNum=num.reduce((acc,curr)=>acc+curr,0)
+let myNum=num.reduce((acc,curr)=>acc+curr,0)
 // console.log(myNum);
 
 let courses=[
