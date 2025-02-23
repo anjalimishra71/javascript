@@ -1,11 +1,12 @@
-const promiseOne=new Promise(function(resolve,reject){
-    setTimeout(function(){
-        // console.log("hello");
-        resolve()
-    },1000)
-})
+// const promiseOne = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         // console.log("hello");
+//         resolve()
+    
+//     }, 1000)
+// })
 
-// promiseOne.then(function(){
+// promiseOne.then(function () {
 //     console.log("promise resolved")
 // })
 
@@ -37,17 +38,17 @@ const fourthPromise=new Promise(function(resolve,reject){
         }
 })
 
-// fourthPromise.then((user)=>{
-//     console.log(user);
-//     return user.username;
-// })
-// .then((user)=>{
-//     console.log(user);
-// })
-// .catch((user)=>{
-//     console.log(user)
-// })
-// .finally(()=>console.log("promise is either resolve or rejected"))
+fourthPromise.then((user)=>{
+    console.log(user);
+    return user.username;
+})
+.then((user)=>{
+    console.log(user);
+})
+.catch((user)=>{
+    console.log(user)
+})
+.finally(()=>console.log("promise is either resolve or rejected"))
 
 
 // const FifthPromise=new Promise(function(resolve,reject){
@@ -63,7 +64,7 @@ const fourthPromise=new Promise(function(resolve,reject){
 // async function consumeFivePromise(){
 //     try{
 //         const response =await FifthPromise
-//         console.log(response); 
+//         console.log(response);
 //     }
 //     catch(error){
 //         console.log(error);
@@ -72,21 +73,22 @@ const fourthPromise=new Promise(function(resolve,reject){
 // consumeFivePromise()
 
 
-async function getAllUsers(){
-     try{
-        const response=await fetch('https://jsonplaceholder.typicode.com/users');
-        const data=await response.json();
-        console.log(data);
-    }catch(error){
-        console.log(error);
-    }
-}
-getAllUsers()
+// async function getAllUsers(){
+//      try{
+//         const response=await fetch('https://jsonplaceholder.typicode.com/users');
+//         const data=await response.json();
+//         console.log(data);
+//     }catch(error){
+//         console.log(error);
+//     }
+// }
+// getAllUsers()
 
-fetch('https://api.github.com/users/anjalimishra71')
-.then((response)=>{
-    return response.json()
-}
-)
-.then((data)=>console.log(data))
-.catch((error)=>console.log(error))
+// fetch('https://api.github.com/users/anjalimishra71')
+// .then((response)=>{
+//     return response.json()
+// }
+// )
+// .then((data)=>console.log(data))
+// .catch((error)=>console.log(error))
+

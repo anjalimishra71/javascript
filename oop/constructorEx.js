@@ -1,16 +1,17 @@
 const Person = function (firstName, birthYear) {
     // console.log(this)
+    //instance property
     this.firstName = firstName
     this.birthYear = birthYear
 
     //never do this
-    // this.calcAge = function () {
-    //     console.log(2024 - this.birthYear);
-    // }
+    this.calcAge = function () {
+        console.log(2024 - this.birthYear);
+    }
     
 }
 const anjali = new Person("anjali", 2007)
-// console.log(anjali);
+console.log(anjali);
 
 //new {} is created
 //function is called , this={}
@@ -19,13 +20,13 @@ const anjali = new Person("anjali", 2007)
 
 const kaju = new Person("kaju", 2002)
 
-// console.log(anjali, kaju);
+console.log(anjali, kaju);
 
-// const jay = 'jay'
-// console.log(anjali instanceof Person);
-// console.log(jay instanceof Person);
+const jay = 'jay'
+console.log(anjali instanceof Person);
+console.log(jay instanceof Person);
 
-// anjali.calcAge();
+anjali.calcAge();
 
 
 
