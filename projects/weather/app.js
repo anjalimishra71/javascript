@@ -1,4 +1,5 @@
-const apiKey="c2a6414bb4d652fccd774f3f6e2b3943";
+
+const apiKey="";
 const form=document.querySelector("form");
 
 form.addEventListener('submit',function(e){
