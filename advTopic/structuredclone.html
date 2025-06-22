@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>structuredClone Deep Copy Demo</title>
+</head>
+<body>
+  <h2>Check Console for Output</h2>
+
+  <script>
+    const original = {
+      name: "Anjali",
+      age: 21,
+      hobbies: ["coding", "reading"],
+      joined: new Date(),
+      details: new Map([["college", "MGDC"], ["course", "BCA"]]),
+      greet: function () {
+        return `Hello, ${this.name}`;
+      }
+    };
+
+    // Clone the object deeply using structuredClone
+    const deepCopy = structuredClone(original);
+
+    console.log("✅ Original Object:", original);
+    console.log("✅ Deep Copied Object:", deepCopy);
+
+    console.log("📅 Is Date preserved?", deepCopy.joined instanceof Date); // true
+    console.log("🗺️ Is Map preserved?", deepCopy.details instanceof Map);   // true
+    console.log("❌ Is greet function preserved?", typeof deepCopy.greet);   // undefined
+
+    // Modify the deep copy
+    deepCopy.name = "Neha";
+    deepCopy.hobbies.push("music");
+
+    console.log("🎯 After modifying deep copy:");
+    console.log("Original name:", original.name);     // Still "Anjali"
+    console.log("Copied name:", deepCopy.name);       // "Neha"
+    console.log("Original hobbies:", original.hobbies); // Not affected
+    console.log("Copied hobbies:", deepCopy.hobbies);
+  </script>
+</body>
+</html>

@@ -15,3 +15,4 @@ console.log("---------After modification----------");
 newEmployee.ename = "Beck";
 console.log("Employee=> ", employee);
 console.log("New Employee=> ", newEmployee);
+//res are same

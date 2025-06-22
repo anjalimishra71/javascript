@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head><title>Throttle Example</title></head>
+<body style="height:2000px">
+  <h2>Scroll to see throttled output in console</h2>
+
+  <script>
+    function throttle(fn, delay) {
+      let lastCall = 0;
+      return function (...args) {
+        const now = new Date().getTime();
+        if (now - lastCall >= delay) {
+          lastCall = now;
+          fn.apply(this, args);
+        }
+      };
+    }
+
+    function handleScroll() {
+      console.log("Scroll event at", new Date().toLocaleTimeString());
+    }
+
+    window.addEventListener("scroll", throttle(handleScroll, 1000));
+  </script>
+</body>
+</html>
+
+
+function throttle(fn,delay){
+  let timer;
+    return timer=setTimeout(()=>{
+
+   },delay)
+
+}
+
+function handleLike(){
+console.log("Liked at", new Date().toLocaleTimeString());
+
+}
+
+totalLike=throttle(handleLike,2);
